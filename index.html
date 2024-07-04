@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Anas Sharaf</title>
+    <script src="https://kit.fontawesome.com/b687c8372f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Anas</a>
+        <nav class="navigation">
+            <a href="#about-me">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="dark-mode-toggle" class="dark-mode-btn">Dark Mode</button>
+        </nav>
+    </header>
+    <section class="main">
+        <div>
+            <h2>Hello, I'm Anas <br><span>Aspiring Software Developer</span></h2>
+            <h3>Pursuing Excellence</h3>
+            <a href="#projects" class="main-btn">View My Work</a>
+            <div class="social-icons">
+                <a href="https://wa.me/966501984423"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="cards" id="about-me">
+        <h2 class="title">About Me</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="info">
+                    <h3>Information and Skills</h3>
+                    <p>Name: Anas Sharaf<br>Age: 23<br>Nationality: Yemeni<br>Skills: Time management, Team management, Working under pressure.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>Education</h3>
+                    <p>Student at Tabuk University<br>Major in Information Technology<br>About to graduate</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="info">
+                    <h3>What I Offer</h3>
+                    <p>Innovative software solutions<br>Operational efficiency improvement<br>Technical project management<br>Advanced web application development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="info">
+                    <h3>University Projects</h3>
+                    <p>I have completed various projects during my studies, participating in several academic and extracurricular activities.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-file-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Graduation Project</h3>
+                    <p>My graduation project is an online medical appointment booking system. It is currently under construction and not yet completed.</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="cards" id="contact">
+        <h2 class="title">Let's Work Together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+966501984423">+966 501984423</a></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p><a href="mailto:ans17ana1@gmail.com">ans17ana1@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('dark-mode-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('header').classList.toggle('dark-mode');
+            document.querySelector('.logo').classList.toggle('dark-mode');
+            document.querySelectorAll('.navigation a').forEach(function(element) {
+                element.classList.toggle('dark-mode');
+            });
+            document.querySelectorAll('.card').forEach(function(element) {
+                element.classList.toggle('dark-mode');
+            });
+            this.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
